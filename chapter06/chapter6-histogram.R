@@ -10,6 +10,7 @@ ggplot(cars2008, aes(x = cty)) +
   geom_histogram() +
   labs(title = "Default histogram")
 
+# 带有二十个数据桶的彩色直方图
 ggplot(cars2008, aes(x = cty)) +
   geom_histogram(bins = 20, color = "white", fill = "steelblue") +
   labs(

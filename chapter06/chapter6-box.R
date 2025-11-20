@@ -1,4 +1,5 @@
 library(ggplot2)
+
 # 箱线图又称为盒须图，是可视化分布与组间差异的有效方法
 ggplot(mtcars, aes(x = "", y = mpg)) +
   geom_boxplot() +
@@ -19,7 +20,8 @@ ggplot(cars, aes(x = Cylinders, y = cty)) +
     title = "Car Mileage Data"
   )
 
-# 增加凹槽
+# 增加凹槽，其正式名称是“Notch”，它的主要作用是：用于直观地比较不同箱线图的中位数是否存在显著差异。
+# 凹槽的显示的是中位数的置信区间
 ggplot(cars, aes(x = Cylinders, y = cty)) +
   geom_boxplot(notch = T, fill = "steelblue", varwidth = T) +
   labs(

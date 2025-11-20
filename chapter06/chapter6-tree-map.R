@@ -15,7 +15,6 @@ ggplot(plotdata1, aes(fill = manufacturer, area = n, label = manufacturer)) +
 plotdata2 <- mpg %>% count(manufacturer, drv)
 
 # 将plotdata2的drv变量转换为因子，4-wheel、front-wheel、rear
-
 plotdata2$drv <- factor(plotdata2$drv,
   levels = c("4", "f", "r"),
   labels = c("4-wheel", "front-wheel", "rear")

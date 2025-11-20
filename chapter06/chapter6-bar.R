@@ -1,8 +1,5 @@
 # 条形图通过水平或者水平的条形展示了分类变量的分布（频数）
-
-# 风湿性关节炎新疗法研究
-install.packages("vcd")
-
+# 风湿性关节炎新疗法研究 install.packages("vcd")
 data(Arthritis, package = "vcd")
 # Marked 明显改善、Some 部分改善、None没有改善
 table(Arthritis$Improved)
